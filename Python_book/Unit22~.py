@@ -22,3 +22,4 @@ for i in range(3):
 from pprint import pprint
 
 pprint(mine, indent=4, width=20)
+print(a)
