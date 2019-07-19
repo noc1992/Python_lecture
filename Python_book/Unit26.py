@@ -149,3 +149,4 @@ a = {i for i in 'mellon'}
 # set(식 for 변수 in 세트 if 조건식)
 a = {i for i in 'pineapple' if i not in 'apl'}  # apl을 제외한 문자들로 세트 구성
 # for 반복문 뒤에 if 조건문을 지정하면 if 조건문에서 특정 요소를 제외한 뒤 세트를 생성합니다.
+# 제거 확인
