@@ -24,16 +24,27 @@
 # elegance
 # accepted
 
-lines = ['Fortunately, however, for the reputation of Asteroid B-612, a Turkish dictator made a law that his subjects, under pain of death, should change to European costume. So in 1920 the astronomer gave his demonstration all over again, dressed with impressive style and elegance. And this time everybody accepted his report.']
+with open('text.txt', 'r') as file:
+    for line in file:
+        print(line.strip('\n'))
+
+lines = line.split()
+
+line_l = []
+for i in lines:
+    words = i.strip(',.''""')
+    line_l.append(words)
+List = []
+for i in line_l:
+    for k in i:
+        if k == 'c':
+            List.append(i)
 
 
-with open('judge_file.py', 'w') as file:
-    file.writelines(lines)
+for i in {'1'='dictator', '2'='subjects','3'='change','4'='costume','5'='elegance','6'='accepted' }:
+    print(i)
 
-with open('judge_file.py', 'r') as file:
-    line = None                 # 변수 line을 None으로 초기화
-    while line != '':
-        line = file.readline()
-        a = {i for i in line if "c" not in line}
-        print(a)
+
+
+
 
