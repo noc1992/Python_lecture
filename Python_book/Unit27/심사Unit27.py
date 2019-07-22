@@ -40,11 +40,3 @@ for i in line_l:
         if k == 'c':
             List.append(i)
 
-
-for i in {'1'='dictator', '2'='subjects','3'='change','4'='costume','5'='elegance','6'='accepted' }:
-    print(i)
-
-
-
-
-
