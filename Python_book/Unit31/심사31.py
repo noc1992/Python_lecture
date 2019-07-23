@@ -20,13 +20,18 @@
 # 20
 # 결과
 # 6765
-fib_seq = []
-def fib(**kwargs):
-    for kw, arg in kwargs.items():
-        sum(arg[len(kwargs)-1:], arg[len(kwargs)-2:len(kwargs)-1])
 
+n = int(input())
 
+def fib(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    else:
+       return fib(n-2) + fib(n-1)
 
+print(fib(13))
 
 
 

@@ -20,3 +20,6 @@
 
 files = input().split()
 
+list(map(lambda x: '{0:0>7}'.format(x) if '.png' in x or '.jpg' in x else '{0:0>8}'.format(x), files))
+
+
