@@ -56,14 +56,43 @@ for i in range(x):
 
 
 # 연습문제 6
-a = int(input())
-7
-for i in range(a):
-    for j in range(a+i):
-        if (a-3)-i <= j <= (a-3)+i:
-            print('*', end='')
-        else:
-            print(' ', end='')
+n = int(input())
+height = (n + 1) // 2
+
+for i in range(1, height + 1):
+    for k in range(height - i):
+        print(' ', end='')
+    for k in range(i * 2 - 1):
+        print('*', end='')
+    print()
+for i in reversed(range(1, height)):
+    for k in range(i, height):
+        print(' ', end='')
+    for k in range(i * 2 - 1):
+        print('*', end='')
     print()
 
-j < (i-2) or j >= (a+1)-i:
+
+
+# 반복문 3
+# 디지털 시계에 하루동안(00:00~23:59) 3이 표시되는 시간을 초로 환산하면
+# 총 몇 초(second) 일까요?- 디지털 시계는 하루동안 다음과 같이 시:분(00:00~23:59)으로 표시됨.
+# 00:00 (60초간 표시)		00:01 		…		23:59
+total = 0
+for hour in range(24):
+    if hour % 10 == 3:          # 3시, 13시, 23시
+        total += 60 * 60;
+    else:
+        for min in range(60):
+            if min // 10 == 3:  # 30분 ~ 39분
+                total += 60
+            elif min % 10 == 3: # 3분, 13분, 23분, 43분, 53분
+                total += 60
+
+print(total)
+
+
+
+def is_palindrome(n):
+  s = str(n)
+  return s == s[::-1]

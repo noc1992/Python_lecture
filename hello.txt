@@ -1,3 +1,0 @@
-hi!
-python
-this is a code gym!!
