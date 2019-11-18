@@ -22,3 +22,10 @@
     
 ## 딥러닝 
     - 딥러닝 학습
+
+## 파이썬 패키지
+    1) Numpy
+    2) Pandas
+    3) SQlite3
+    4) visualize
+    5) OpenCV
